@@ -63,3 +63,10 @@
 - Fixes V00M binary transaction selftest.
 - Fixes product gate so failed subrunners fail the gate.
 - Adds clean transaction recovery report for versioned snapshots and fallback recovery.
+
+## v0.0.11-rust-core-pyo3
+
+- Added experimental Rust core crate with PyO3 0.22 bindings.
+- Added deterministic Rust binary record encode/decode.
+- Added CRC corruption detection in Rust selftest.
+- Added Python bridge module for Rust extension.

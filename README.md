@@ -74,3 +74,13 @@ BalloonDB now includes WAL compaction into binary snapshots, snapshot manifest g
 
 - v0.0.9-binary-transaction-atomic-commit
 
+
+## Rust/PyO3 core preview
+
+V00O adds an experimental Rust/PyO3 binary core. It is not required by the default product gate yet.
+
+Run on Windows with Rust and maturin available:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_RUST_CORE_PYO3_SELFTEST_V00O.ps1" -InstallMaturin
+```
