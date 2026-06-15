@@ -1,4 +1,4 @@
-﻿## v0.0.8-binary-compaction-snapshot
+## v0.0.8-binary-compaction-snapshot
 
 - Added binary snapshot compaction from base files plus WAL.
 - Added snapshot manifest and SNAPSHOT_COMPLETE marker.
@@ -70,3 +70,11 @@
 - Added deterministic Rust binary record encode/decode.
 - Added CRC corruption detection in Rust selftest.
 - Added Python bridge module for Rust extension.
+
+## v0.0.12 - V00O3 Rust drop-in V00J compatibility
+
+- Rust/PyO3 can read/write the existing Python V00J binary format.
+- Added Python shim: Rust if available, Python fallback otherwise.
+- Added root pyproject.toml for maturin build integration.
+- Product gate now runs Rust/PyO3 selftest fail-closed.
+- Rust/TOML files written without BOM.

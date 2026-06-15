@@ -58,3 +58,6 @@ Thumbs.db
 *.pyd
 *.so
 *.dylib
+/audit/v00o/**
+/audit/v00o3/**
+/rust/balloondb_core_rs/target/**

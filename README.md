@@ -1,4 +1,4 @@
-﻿# BalloonDB
+# BalloonDB
 
 BalloonDB is an agent-native memory database for graph memory, evidence, routes, query traces, and verifiable promotion states.
 
@@ -84,3 +84,8 @@ Run on Windows with Rust and maturin available:
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_RUST_CORE_PYO3_SELFTEST_V00O.ps1" -InstallMaturin
 ```
+
+
+## V00O3 Rust drop-in V00J compatibility
+
+Rust/PyO3 now implements the existing V00J .bseed/.bbridge/.bwal record/file layout. BRS1 remains a lab format, not the main DB format. Product gate runs the Rust/PyO3 compatibility selftest.

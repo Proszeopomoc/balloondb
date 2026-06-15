@@ -1,9 +1,9 @@
-﻿[package]
+[package]
 name = "balloondb_core_rs"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 license = "AGPL-3.0-only"
-description = "Rust/PyO3 experimental binary core for BalloonDB"
+description = "Rust/PyO3 drop-in compatible binary core for BalloonDB V00J records"
 
 [lib]
 name = "balloondb_core_rs"
