@@ -1,37 +1,14 @@
-﻿# BalloonDB Binary Transaction and Atomic Commit V00M
+﻿# BalloonDB Binary Transaction V00M1
 
-V00M adds a versioned binary commit protocol.
+V00M1 fixes the transaction selftest and the product gate behavior after V00M.
 
-## Files
+## Guarantees tested
 
-- `versions/<version_id>/snapshot.bseed`
-- `versions/<version_id>/snapshot.bbridge`
-- `versions/<version_id>/snapshot.bindex`
-- `versions/<version_id>/snapshot.bwal`
-- `versions/<version_id>/snapshot.bdbm`
-- `versions/<version_id>/SNAPSHOT_COMPLETE`
-- `CURRENT`
+- versioned snapshot directories
+- staged snapshot not active until CURRENT is atomically replaced
+- CURRENT pointer activation
+- fallback to the latest previous complete snapshot
+- CRC/SHA corruption detection
+- product gate fails if a subrunner fails
 
-## Commit rule
-
-A version is not live until `CURRENT` is atomically replaced.
-
-## Recovery rule
-
-Recovery first validates `CURRENT`. If current points to a corrupt or incomplete version, recovery scans versions and falls back to the newest complete checksum-valid snapshot.
-
-## Validation
-
-The V00M selftest checks:
-
-1. commit v1
-2. stage v2 without pointer and verify v1 remains current
-3. commit v2
-4. corrupt v2
-5. recover to previous complete valid v1
-
-Expected marker:
-
-```text
-PASS_BALLOONDB_BINARY_TRANSACTION_ATOMIC_COMMIT_V00M
-```
+Stable tag target: `v0.0.10-binary-transaction-gate-fixed`.

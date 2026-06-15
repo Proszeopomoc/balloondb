@@ -57,3 +57,9 @@
 - Added V00M binary transaction and atomic commit selftest.
 - Added versioned snapshots with CURRENT pointer recovery.
 
+
+## v0.0.10-binary-transaction-gate-fixed
+
+- Fixes V00M binary transaction selftest.
+- Fixes product gate so failed subrunners fail the gate.
+- Adds clean transaction recovery report for versioned snapshots and fallback recovery.
