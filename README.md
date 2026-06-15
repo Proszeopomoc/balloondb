@@ -56,3 +56,8 @@ Commercial use is allowed under AGPL-3.0 terms. If a company or project needs di
 
 BalloonDB is experimental software provided as-is, without warranty. Use it at your own risk and do not use it for sensitive or production data without independent validation.
 
+
+## V00J binary database core
+
+BalloonDB now includes a first binary storage core for .bseed, .bbridge, .bwal, and .bdbm manifest files. Run scripts/windows/RUN_BINARY_FORMAT_SELFTEST_V00J.ps1 to verify write/read/WAL/replay/corrupt-detection behavior.
+

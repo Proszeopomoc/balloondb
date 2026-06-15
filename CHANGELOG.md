@@ -1,4 +1,10 @@
-﻿# Changelog
+﻿## v0.0.5-binary-db-core
+
+- Added V00J binary .bseed, .bbridge, .bwal, and .bdbm manifest core.
+- Added CRC corruption detection selftest.
+- Added binary format specification.
+
+# Changelog
 
 ## v0.0.4-agpl-license
 
@@ -28,3 +34,4 @@
 
 - Initial clean BalloonDB staging baseline.
 - Separated core repository from BalloonOperator workspace.
+

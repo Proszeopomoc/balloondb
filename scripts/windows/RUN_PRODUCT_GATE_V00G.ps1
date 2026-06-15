@@ -30,7 +30,7 @@ $RequiredFiles = @(
   "scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1",
   "scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1",
   "scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
-  "scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1"
+  "scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1",`r`n  "scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1"
 )
 
 $Missing = @()
@@ -88,4 +88,5 @@ if ($Missing.Count -ne 0 -or $ActiveHits.Count -ne 0 -or $TrackedGenerated.Count
 
 $Summary | ConvertTo-Json -Depth 5
 Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00G"
+
 
