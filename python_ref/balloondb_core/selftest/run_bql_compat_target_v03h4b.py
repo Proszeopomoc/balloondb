@@ -6,14 +6,29 @@ import py_compile
 import time
 from pathlib import Path
 
+
+def resolve_py_root():
+    here = Path(__file__).resolve()
+    candidates = [
+        here.parents[2],
+        here.parents[3] / "python_ref",
+        Path.cwd() / "python_ref",
+        Path.cwd(),
+    ]
+    for c in candidates:
+        if (c / "balloondb_core" / "bql_error_contract.py").exists():
+            return c
+    return here.parents[2]
 from balloondb_core.bql_contract_runner import run_query_contract
 from balloondb_core.bql_error_contract import write_json, write_jsonl, write_html_report
 from balloondb_core.selftest.run_selftest_v03g1 import run_selftest as run_g1
 from balloondb_core.selftest.run_selftest_v03g2 import run_selftest as run_g2
 
-PY_ROOT = Path(os.environ.get("BALLOONDB_ROOT", Path.cwd())).resolve()
-CORE = PY_ROOT / "balloondb_core"
+PY_ROOT = resolve_py_root().resolve()
 REPO_ROOT = PY_ROOT.parent if PY_ROOT.name.lower() == "python_ref" else PY_ROOT
+py_root = PY_ROOT
+repo_root = REPO_ROOT
+CORE = PY_ROOT / "balloondb_core"
 DATA = CORE / "data" / "v03h4b_selftest"
 REPORTS = CORE / "reports"
 AUDIT = REPO_ROOT / "audit" / "v03h4b"
@@ -228,4 +243,7 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+
 
