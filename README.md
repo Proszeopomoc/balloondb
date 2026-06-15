@@ -61,3 +61,8 @@ BalloonDB is experimental software provided as-is, without warranty. Use it at y
 
 BalloonDB now includes a first binary storage core for .bseed, .bbridge, .bwal, and .bdbm manifest files. Run scripts/windows/RUN_BINARY_FORMAT_SELFTEST_V00J.ps1 to verify write/read/WAL/replay/corrupt-detection behavior.
 
+
+## V00K binary index and query
+
+BalloonDB now includes .bindex support over V00J .bseed and .bbridge files, with lookup by record id, type, trust state, relation, and a minimal binary query subset. Run scripts/windows/RUN_BINARY_INDEX_QUERY_SELFTEST_V00K.ps1 to verify indexing and query behavior.
+

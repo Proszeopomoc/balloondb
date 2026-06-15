@@ -1,4 +1,11 @@
-﻿## v0.0.5-binary-db-core
+﻿## v0.0.7-binary-index-query
+
+- Added .bindex binary index envelope.
+- Added record id, type, trust state, relation, and logical id lookup.
+- Added minimal binary query selftest.
+- Added corrupt index detection.
+
+## v0.0.5-binary-db-core
 
 - Added V00J binary .bseed, .bbridge, .bwal, and .bdbm manifest core.
 - Added CRC corruption detection selftest.
@@ -34,4 +41,5 @@
 
 - Initial clean BalloonDB staging baseline.
 - Separated core repository from BalloonOperator workspace.
+
 

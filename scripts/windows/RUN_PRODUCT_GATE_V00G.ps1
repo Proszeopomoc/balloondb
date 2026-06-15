@@ -20,13 +20,13 @@ $RequiredFiles = @(
   "specs\PRODUCT_ARCHITECTURE.md",
   "specs\FORMAT_SPEC.md",
   "specs\BINARY_FORMAT_V00J.md",
+  "specs\BINARY_INDEX_QUERY_V00K.md",
   "scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1",
   "scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1",
   "scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
   "scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1",
   "scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1",
-  "python_ref\balloondb_core\binary_format_v00j.py",
-  "python_ref\balloondb_core\selftest\run_binary_format_v00j.py"
+  "scripts\windows\RUN_BINARY_INDEX_QUERY_SELFTEST_V00K.ps1"
 )
 
 $Missing = @()
@@ -47,12 +47,12 @@ $ActiveHits = Get-ChildItem ".\python_ref", ".\scripts" -Recurse -File |
 
 $TrackedGenerated = git ls-files |
   Where-Object {
-    ($_ -match '^audit/v03h4b/') -or
+    ($_ -match '^audit/v00k/') -or
     ($_ -match '^audit/v00j/') -or
+    ($_ -match '^audit/v03h4b/') -or
     ($_ -match '^python_ref/balloondb_core/data/' -and $_ -notmatch '\.gitkeep$') -or
     ($_ -match '^python_ref/balloondb_core/reports/' -and $_ -notmatch '\.gitkeep$') -or
-    ($_ -match '^balloondb_core/') -or
-    ($_ -match '^06_EVIDENCE/')
+    ($_ -match '^balloondb_core/')
   }
 
 $CompileFail = @()
@@ -67,11 +67,12 @@ foreach ($f in $PyFiles) {
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1"
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1"
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BINARY_INDEX_QUERY_SELFTEST_V00K.ps1"
 
 $Summary = [PSCustomObject]@{
-  status = "PASS_BALLOONDB_PRODUCT_GATE_V00J1"
+  status = "PASS_BALLOONDB_PRODUCT_GATE_V00K"
   repo_root = $RepoRoot
   missing_required_files = $Missing.Count
   active_root_hits = $ActiveHits.Count
@@ -80,10 +81,10 @@ $Summary = [PSCustomObject]@{
 }
 
 if ($Missing.Count -ne 0 -or $ActiveHits.Count -ne 0 -or $TrackedGenerated.Count -ne 0 -or $CompileFail.Count -ne 0) {
-  $Summary.status = "NO_GO_BALLOONDB_PRODUCT_GATE_V00J1"
+  $Summary.status = "NO_GO_BALLOONDB_PRODUCT_GATE_V00K"
   $Summary | ConvertTo-Json -Depth 5
-  throw "NO_GO_BALLOONDB_PRODUCT_GATE_V00J1"
+  throw "NO_GO_BALLOONDB_PRODUCT_GATE_V00K"
 }
 
 $Summary | ConvertTo-Json -Depth 5
-Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00J1"
+Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00K"
