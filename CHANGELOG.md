@@ -78,3 +78,10 @@
 - Added root pyproject.toml for maturin build integration.
 - Product gate now runs Rust/PyO3 selftest fail-closed.
 - Rust/TOML files written without BOM.
+
+## v0.0.13 - V00O3A Strict Rust drop-in V00J byte contract
+
+- Added V00J wire-format spec and golden vectors.
+- Rust exposes v00j_record_id, v00j_encode_record, v00j_write_file, v00j_read_file.
+- Product gate runs strict Rust/Python byte-for-byte V00J compatibility test.
+- BRS1 remains legacy/lab and is not promoted as main storage format.

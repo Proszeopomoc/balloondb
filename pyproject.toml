@@ -4,8 +4,8 @@ build-backend = "maturin"
 
 [project]
 name = "balloondb-core-rs"
-version = "0.0.2"
-description = "Rust/PyO3 core for BalloonDB V00J-compatible binary records"
+version = "0.0.3"
+description = "Rust/PyO3 drop-in core for BalloonDB V00J-compatible binary records"
 requires-python = ">=3.10"
 license = { text = "AGPL-3.0-only" }
 

@@ -89,3 +89,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_R
 ## V00O3 Rust drop-in V00J compatibility
 
 Rust/PyO3 now implements the existing V00J .bseed/.bbridge/.bwal record/file layout. BRS1 remains a lab format, not the main DB format. Product gate runs the Rust/PyO3 compatibility selftest.
+
+
+## V00O3A Strict Rust drop-in V00J byte contract
+
+Rust/PyO3 now has a strict byte-for-byte V00J compatibility gate. Rust does not serialize JSON; Python canonicalizes payload bytes and Rust performs V00J framing. BRS1 remains legacy/lab, not the main format.
