@@ -1,2 +1,0 @@
-{"ok": false, "query": "DELETE FROM seed(\"BAD\") BALLOON radius=2 direction=up_down RETURN concept", "error": "unsafe token rejected: DELETE"}
-{"ok": false, "query": "FROM seed(\"BAD_RADIUS\") BALLOON radius=99 direction=up_down RETURN concept", "error": "radius out of bounds: 99; allowed 1..3"}

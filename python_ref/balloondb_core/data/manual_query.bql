@@ -1,1 +1,0 @@
-﻿EXPLAIN FROM seed("RUST_BRANCH_OR_LOOP_CONTRACT_FAIL") BALLOON radius=3 direction=up_down FILTER promotion_status="promoted_concept" RETURN route,evidence

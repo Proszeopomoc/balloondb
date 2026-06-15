@@ -28,3 +28,17 @@ large_files_over_5mb.csv
 Thumbs.db
 .vscode/
 .idea/
+
+# BalloonDB generated test/audit outputs
+/audit/v03h4b/*.json
+/audit/v03h4b/*.jsonl
+/audit/v03h4b/*.html
+
+/python_ref/balloondb_core/data/**
+!/python_ref/balloondb_core/data/.gitkeep
+
+/python_ref/balloondb_core/reports/**
+!/python_ref/balloondb_core/reports/.gitkeep
+
+/balloondb_core/
+/06_EVIDENCE/

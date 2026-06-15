@@ -1,1 +1,0 @@
-﻿FROM seed("PASS_V03G3_BQL_SELFTEST") BALLOON radius=2 direction=up_down RETURN pattern_id,summary TOP 10

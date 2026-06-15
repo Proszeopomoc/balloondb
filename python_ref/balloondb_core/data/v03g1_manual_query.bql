@@ -1,1 +1,0 @@
-﻿FROM seed("PASS_V03G0_BQL_SELFTEST") BALLOON radius=2 direction=up_down RETURN route,evidence,concept
