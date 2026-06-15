@@ -55,3 +55,4 @@ Commercial use is allowed under AGPL-3.0 terms. If a company or project needs di
 ## Security and warranty
 
 BalloonDB is experimental software provided as-is, without warranty. Use it at your own risk and do not use it for sensitive or production data without independent validation.
+
