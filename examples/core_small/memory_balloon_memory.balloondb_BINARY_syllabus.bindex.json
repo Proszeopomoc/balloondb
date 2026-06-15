@@ -1,0 +1,181 @@
+{
+  "schema": "BALLOON_OPERATOR_SYLLABUS_INDEX_V03F4B",
+  "topic_count": 5,
+  "topics": {
+    "L1_SYMBOL_BINDING_AND_SCOPE": {
+      "api_policy": {
+        "junior": "GPT may explain compiler errors; no full code.",
+        "mid": "local rule first; GPT only for concept contradiction.",
+        "senior": "api_cutoff true after promotion."
+      },
+      "concept_id": "SYMBOL_BINDING_AND_SCOPE",
+      "created_ts": 1781501078856,
+      "goal": "Names/symbols must be defined and bound before use in accessible scope.",
+      "lab_modes": [
+        "python"
+      ],
+      "languages": [
+        "python"
+      ],
+      "level": 1,
+      "paradigm_id": "PROGRAM_STATE_REFERENCE_VALIDITY",
+      "promotion_gate": {
+        "min_evidence": 3,
+        "min_languages": 1,
+        "needs_test_pass": true,
+        "needs_transfer": false
+      },
+      "required_signatures": [
+        "PY_NAMEERROR_UNDEFINED_NAME"
+      ],
+      "source_code_allowed_in_syllabus": false,
+      "syllabus_id": "L1_SYMBOL_BINDING_AND_SCOPE",
+      "type": "SYLLABUS_TOPIC",
+      "unit_tests_only": true,
+      "version": "BALLOON_OPERATOR_V03F4A_SYLLABUS_DRIVEN_DISCOVERY"
+    },
+    "L2_CONTROL_FLOW_STRUCTURE": {
+      "api_policy": {
+        "junior": "GPT may explain failing test meaning.",
+        "mid": "GPT only for abstract control-flow concept.",
+        "senior": "api_cutoff true after transfer."
+      },
+      "concept_id": "CONTROL_FLOW_STRUCTURE",
+      "created_ts": 1781501078857,
+      "executor_status": "NEEDS_V03F5_TASK_VARIANTS",
+      "goal": "Programs must select, repeat, and stop operations with correct control-flow boundaries.",
+      "lab_modes": [],
+      "languages": [
+        "python",
+        "rust",
+        "c"
+      ],
+      "level": 2,
+      "paradigm_id": "STATE_TRANSITION_CONTROL",
+      "promotion_gate": {
+        "min_evidence": 6,
+        "min_languages": 2,
+        "needs_test_pass": true,
+        "needs_transfer": true
+      },
+      "required_signatures": [
+        "PY_ASSERTION_FAIL_CONTROL_FLOW",
+        "RUST_BRANCH_OR_LOOP_CONTRACT_FAIL",
+        "C_BRANCH_OR_LOOP_CONTRACT_FAIL"
+      ],
+      "source_code_allowed_in_syllabus": false,
+      "syllabus_id": "L2_CONTROL_FLOW_STRUCTURE",
+      "type": "SYLLABUS_TOPIC",
+      "unit_tests_only": true,
+      "version": "BALLOON_OPERATOR_V03F4A_SYLLABUS_DRIVEN_DISCOVERY"
+    },
+    "L2_RESOURCE_LIFECYCLE_OWNERSHIP": {
+      "api_policy": {
+        "junior": "GPT may explain error semantics only.",
+        "mid": "GPT only for concept-level explanation; no syntax rescue.",
+        "senior": "api_cutoff true after cross-language proof."
+      },
+      "concept_id": "RESOURCE_LIFECYCLE_OWNERSHIP",
+      "created_ts": 1781501078857,
+      "goal": "A resource has acquisition/allocation, valid use, ownership/responsibility, release/end.",
+      "lab_modes": [
+        "rust",
+        "c",
+        "transfer"
+      ],
+      "languages": [
+        "rust",
+        "c"
+      ],
+      "level": 2,
+      "paradigm_id": "RESOURCE_LIFECYCLE_MANAGEMENT",
+      "promotion_gate": {
+        "min_evidence": 6,
+        "min_languages": 2,
+        "needs_test_pass": true,
+        "needs_transfer": true
+      },
+      "required_signatures": [
+        "RUST_E0382_BORROW_OF_MOVED_VALUE",
+        "C_USE_AFTER_FREE_RESOURCE_LIFECYCLE",
+        "C_MEMORY_LEAK_MALLOC_WITHOUT_FREE"
+      ],
+      "source_code_allowed_in_syllabus": false,
+      "syllabus_id": "L2_RESOURCE_LIFECYCLE_OWNERSHIP",
+      "type": "SYLLABUS_TOPIC",
+      "unit_tests_only": true,
+      "version": "BALLOON_OPERATOR_V03F4A_SYLLABUS_DRIVEN_DISCOVERY"
+    },
+    "L2_TYPE_CONTRACT_COMPATIBILITY": {
+      "api_policy": {
+        "junior": "GPT may explain type-contract meaning.",
+        "mid": "GPT only for cross-language concept mapping.",
+        "senior": "api_cutoff true after transfer."
+      },
+      "concept_id": "TYPE_CONTRACT_COMPATIBILITY",
+      "created_ts": 1781501078857,
+      "executor_status": "NEEDS_V03F5_TASK_VARIANTS",
+      "goal": "Values passed between functions/modules must satisfy expected type and shape contracts.",
+      "lab_modes": [],
+      "languages": [
+        "python",
+        "rust",
+        "c"
+      ],
+      "level": 2,
+      "paradigm_id": "CONTRACT_MATCHING",
+      "promotion_gate": {
+        "min_evidence": 6,
+        "min_languages": 2,
+        "needs_test_pass": true,
+        "needs_transfer": true
+      },
+      "required_signatures": [
+        "PY_TYPEERROR_CONTRACT_MISMATCH",
+        "RUST_E0308_MISMATCHED_TYPES",
+        "C_INCOMPATIBLE_POINTER_OR_TYPE"
+      ],
+      "source_code_allowed_in_syllabus": false,
+      "syllabus_id": "L2_TYPE_CONTRACT_COMPATIBILITY",
+      "type": "SYLLABUS_TOPIC",
+      "unit_tests_only": true,
+      "version": "BALLOON_OPERATOR_V03F4A_SYLLABUS_DRIVEN_DISCOVERY"
+    },
+    "L3_DATA_PARSING_AND_PROTOCOLS": {
+      "api_policy": {
+        "junior": "not applicable",
+        "mid": "local concepts first",
+        "senior": "GPT cutoff; official safe docs only"
+      },
+      "concept_id": "DATA_PARSING_AND_PROTOCOLS",
+      "created_ts": 1781501078858,
+      "executor_status": "NEEDS_V03F6_TEST_DRIVEN_LAB",
+      "goal": "Read structured input, validate contract, parse fields, and return expected output without relying on hardcoded cases.",
+      "lab_modes": [],
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "level": 3,
+      "paradigm_id": "EXTERNAL_CONTRACT_INTERPRETATION",
+      "promotion_gate": {
+        "min_evidence": 9,
+        "min_languages": 2,
+        "needs_test_pass": true,
+        "needs_transfer": true
+      },
+      "required_signatures": [
+        "JSON_PARSE_CONTRACT_FAIL",
+        "PROTOCOL_FIELD_MISSING",
+        "INPUT_OUTPUT_TEST_FAIL"
+      ],
+      "source_code_allowed_in_syllabus": false,
+      "syllabus_id": "L3_DATA_PARSING_AND_PROTOCOLS",
+      "type": "SYLLABUS_TOPIC",
+      "unit_tests_only": true,
+      "version": "BALLOON_OPERATOR_V03F4A_SYLLABUS_DRIVEN_DISCOVERY"
+    }
+  },
+  "updated_ts": 1781505067213,
+  "version": "BALLOON_OPERATOR_V03F4B_SYLLABUS_BACKFILL_AND_POSTRUN_STATUS_FIX"
+}

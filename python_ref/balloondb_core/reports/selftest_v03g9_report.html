@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><title>V03G9 Selftest</title></head><body><h1>PASS_V03G9_QUERY_HISTORY_AND_EXPLAIN_TRACE_SELFTEST</h1><p>pass_count=11 fail_count=0</p><table border="1" cellpadding="6"><tr><th>Case</th><th>Status</th><th>Sanitized Detail</th></tr><tr><td>local_test_memory_created</td><td>PASS</td><td>balloondb_core/data/selftest_v03g9_memory</td></tr>
+<tr><td>valid_query_recorded_through_wrapper</td><td>PASS</td><td>PASS_V03G8_BQL_QUERY_EXECUTED</td></tr>
+<tr><td>unsafe_query_rejected_and_recorded</td><td>PASS</td><td>ParseError: unsafe token rejected: DELETE</td></tr>
+<tr><td>controlled_redaction_row_recorded</td><td>PASS</td><td>153433369b66c33a644cac56fc581a63c0a835028e99911644646460494553da</td></tr>
+<tr><td>at_least_two_new_history_rows</td><td>PASS</td><td>new_rows=3</td></tr>
+<tr><td>history_required_schema</td><td>PASS</td><td>required=elapsed_ms,feature_version,plan_version,query_hash,result_count,safety_flags,status,timestamp</td></tr>
+<tr><td>history_statuses_include_ok_and_rejected_or_error</td><td>PASS</td><td>ok,rejected</td></tr>
+<tr><td>matching_trace_files_and_stage_schema</td><td>PASS</td><td>[{&quot;query_hash&quot;: &quot;7990c3900d2b3c6a449fb9273a319d79b1ba401d11c69197e25d2201f93f90cb&quot;, &quot;pass&quot;: true, &quot;detail&quot;: &quot;trace schema valid&quot;}, {&quot;query_hash&quot;: &quot;a6ec7a332eaeac88521ce32a8bc601e2d11d5404dc3569be5a534855ab505734&quot;, &quot;pass&quot;: true, &quot;detail&quot;: &quot;trace schema valid&quot;}, {&quot;query_hash&quot;: &quot;153433369b66c33a644cac56fc581a63c0a835028e99911644646460494553da&quot;, &quot;pass&quot;: true, &quot;detail&quot;: &quot;trace schema valid&quot;}]</td></tr>
+<tr><td>redaction_applied_to_history_and_trace</td><td>PASS</td><td>redacted_marker_present=True</td></tr>
+<tr><td>long_metadata_truncated</td><td>PASS</td><td>persisted_length=254</td></tr>
+<tr><td>bounded_history_rotation_keeps_newest_n</td><td>PASS</td><td>indexes=[5, 6, 7]</td></tr></table></body></html>

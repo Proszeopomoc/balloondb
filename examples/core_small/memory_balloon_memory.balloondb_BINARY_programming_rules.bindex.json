@@ -1,0 +1,42 @@
+{
+  "index": {
+    "428621004486534384": {
+      "api_cutoff": false,
+      "distinct_task_count": 2,
+      "language": "python",
+      "promotion_status": "candidate",
+      "rule_id": "PY_NAMEERROR_UNDEFINED_NAME",
+      "seed_id": 2076121901687104652,
+      "signature": "PY_NAMEERROR_UNDEFINED_NAME",
+      "source": "GPT_API_TO_BALLOONDB_RUNTIME_INDEX",
+      "status": "candidate",
+      "success_count": 2,
+      "successful_task_ids": [
+        "task_20260615_005057",
+        "task_20260615_005059"
+      ],
+      "updated_ts": 1781477459521
+    },
+    "4774174514338701663": {
+      "language": "unknown",
+      "rule_id": "E0382",
+      "seed_id": 15876355370403767239,
+      "signature": "E0382 WYSTĄPIŁ BŁĄD BORROW OF MOVED VALUE, PONIEWAŻ PRÓBUJESZ UŻYĆ WARTOŚCI PO JEJ PRZENIESIENIU (MOVE).",
+      "source": "GPT_API",
+      "status": "PASS_RULE_FROM_GPT_API",
+      "success_count": 0
+    },
+    "8856075987933794472": {
+      "language": "python",
+      "rule_id": "PY_LOOP_STRING_ACCUMULATION_REVERSE",
+      "seed_id": 2858943276308562251,
+      "signature": "PY_LOOP_STRING_ACCUMULATION_REVERSE ODWRÓCENIE TEKSTU BEZ GOTOWEGO REVERSE.",
+      "source": "",
+      "status": "PASS_RULE_CONFIRMED",
+      "success_count": 0
+    }
+  },
+  "magic": "BINDX001",
+  "record_count": 3,
+  "version": "BALLOON_OPERATOR_V03F1C_PROMOTION_COUNTER_API_CUTOFF"
+}

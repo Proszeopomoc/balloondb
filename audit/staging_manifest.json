@@ -1,0 +1,649 @@
+﻿{
+    "status":  "PASS_BALLOONDB_REPO_STAGING_CREATED",
+    "source_root":  "C:\\BalloonOperator",
+    "staging_root":  "C:\\BalloonDB_REPO_STAGING",
+    "copied_count":  106,
+    "skipped_count":  0,
+    "created_at":  "2026-06-15T22:27:33",
+    "copied":  [
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\BINARY\\programming_concepts.bindex.json",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_BINARY_programming_concepts.bindex.json",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "637800"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\BINARY\\programming_rules.bbridge",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_BINARY_programming_rules.bbridge",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "72"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\BINARY\\programming_rules.bindex.json",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_BINARY_programming_rules.bindex.json",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "1417"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\BINARY\\programming_rules.bseed",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_BINARY_programming_rules.bseed",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "670"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\BINARY\\syllabus.bindex.json",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_BINARY_syllabus.bindex.json",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "6293"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\MANIFEST.bdbm",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_MANIFEST.bdbm",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "562"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000001.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000001.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "28150"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000002_autofix.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000002_autofix.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "16089"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000003_lessons.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000003_lessons.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "369456"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000004_code_graph.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000004_code_graph.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "37175"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000005_graph_gpt_runner.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000005_graph_gpt_runner.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "8772"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000008_v02l0_source_sanitizer.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000008_v02l0_source_sanitizer.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "584"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000009_v02m0_existing_project_intake.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000009_v02m0_existing_project_intake.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "225"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000012_v03a_local_agent_command_center.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000012_v03a_local_agent_command_center.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "492"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000013_v03c_programming_learning_lab.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000013_v03c_programming_learning_lab.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "958"
+                   },
+                   {
+                       "source":  "memory\\balloon_memory.balloondb\\WAL\\00000015_v03e_api_teacher_safe_source.bwal",
+                       "dest":  "examples\\core_small\\memory_balloon_memory.balloondb_WAL_00000015_v03e_api_teacher_safe_source.bwal",
+                       "decision":  "REPO_CORE_EXAMPLES",
+                       "bytes":  "12284"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BALLOONDB_CORE_REGRESSION_GATE_V03H4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BALLOONDB_CORE_REGRESSION_GATE_V03H4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "539"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_COMPAT_FIX_V03H4A.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_COMPAT_FIX_V03H4A.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "297"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_DAEMON_BENCH_V03G4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_DAEMON_BENCH_V03G4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "596"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_DAEMON_QUERY_V03G4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_DAEMON_QUERY_V03G4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "581"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_DAEMON_START_V03G4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_DAEMON_START_V03G4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "1651"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_DAEMON_STOP_V03G4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_DAEMON_STOP_V03G4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "760"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_QUERY_CONTRACT_V03G3.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_QUERY_CONTRACT_V03G3.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "1747"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_QUERY_V03G1.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_QUERY_V03G1.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "783"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_REGRESSION_V03G7.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_REGRESSION_V03G7.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "1253"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G0.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G0.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "860"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G1.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G1.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "801"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G2.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G2.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "935"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G3.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G3.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "1454"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G4.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G4.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "1253"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G6.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G6.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "2311"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G8.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G8.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "689"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_BQL_SELFTEST_V03G9.ps1",
+                       "dest":  "scripts\\windows\\RUN_BQL_SELFTEST_V03G9.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "218"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
+                       "dest":  "scripts\\windows\\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "610"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_STORAGE_SELFTEST_V03H1.ps1",
+                       "dest":  "scripts\\windows\\RUN_STORAGE_SELFTEST_V03H1.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "596"
+                   },
+                   {
+                       "source":  "09_SCRIPTS\\RUN_WAL_SELFTEST_V03H2.ps1",
+                       "dest":  "scripts\\windows\\RUN_WAL_SELFTEST_V03H2.ps1",
+                       "decision":  "REPO_CORE_SCRIPTS_REVIEW",
+                       "bytes":  "577"
+                   },
+                   {
+                       "source":  "balloondb_core\\__init__.py",
+                       "dest":  "python_ref\\balloondb_core\\__init__.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "55"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_ast.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_ast.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "788"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_contract_runner.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_contract_runner.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "557"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_daemon.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_daemon.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4832"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_daemon_client.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_daemon_client.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3216"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_error_contract.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_error_contract.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2176"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_executor.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_executor.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "7621"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_memory_reader.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_memory_reader.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3948"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_parser.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_parser.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4611"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_planner.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_planner.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3289"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_query_history.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_query_history.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "11570"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_time_filter.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_time_filter.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3723"
+                   },
+                   {
+                       "source":  "balloondb_core\\bql_ts_index.py",
+                       "dest":  "python_ref\\balloondb_core\\bql_ts_index.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "7110"
+                   },
+                   {
+                       "source":  "balloondb_core\\cli.py",
+                       "dest":  "python_ref\\balloondb_core\\cli.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5869"
+                   },
+                   {
+                       "source":  "balloondb_core\\config\\README_ROLE_MAP_USAGE.md",
+                       "dest":  "python_ref\\balloondb_core\\config\\README_ROLE_MAP_USAGE.md",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "329"
+                   },
+                   {
+                       "source":  "balloondb_core\\crash_recovery_v03h3.py",
+                       "dest":  "python_ref\\balloondb_core\\crash_recovery_v03h3.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5078"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\errors.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\errors.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "300"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\explain_traces\\153433369b66c33a644cac56fc581a63c0a835028e99911644646460494553da.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\explain_traces\\153433369b66c33a644cac56fc581a63c0a835028e99911644646460494553da.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2865"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\explain_traces\\7990c3900d2b3c6a449fb9273a319d79b1ba401d11c69197e25d2201f93f90cb.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\explain_traces\\7990c3900d2b3c6a449fb9273a319d79b1ba401d11c69197e25d2201f93f90cb.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1794"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\explain_traces\\a6ec7a332eaeac88521ce32a8bc601e2d11d5404dc3569be5a534855ab505734.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\explain_traces\\a6ec7a332eaeac88521ce32a8bc601e2d11d5404dc3569be5a534855ab505734.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1842"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\manual_query.bql",
+                       "dest":  "python_ref\\balloondb_core\\data\\manual_query.bql",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "159"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\query_history.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\query_history.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5310"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\sample_outputs.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\sample_outputs.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4036"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\sample_queries.txt",
+                       "dest":  "python_ref\\balloondb_core\\data\\sample_queries.txt",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "506"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\selftest_v03g9_memory.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\selftest_v03g9_memory.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "524"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\selftest_v03g9_memory\\pack_selftest_v03g9.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\selftest_v03g9_memory\\pack_selftest_v03g9.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "524"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\selftest_v03g9_rotation\\query_history_rotation.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\selftest_v03g9_rotation\\query_history_rotation.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1140"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g1_manual_query.bql",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g1_manual_query.bql",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "106"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g1_selftest_output.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g1_selftest_output.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1482"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g2_selftest_output.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g2_selftest_output.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3339"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g2_test_exec_word.bql",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g2_test_exec_word.bql",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "148"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g3_selftest_output.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g3_selftest_output.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "18550"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g4_bench_query.bql",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g4_bench_query.bql",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "109"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g4_selftest_output.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g4_selftest_output.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1442"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g6_selftest_output.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g6_selftest_output.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1710"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03g6_time_filter_memory.balloondb\\time_records.jsonl",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03g6_time_filter_memory.balloondb\\time_records.jsonl",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "489"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h1_selftest\\partial_copy.bdb",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h1_selftest\\partial_copy.bdb",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1299"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h1_selftest\\v03h1_selftest.bdb",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h1_selftest\\v03h1_selftest.bdb",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1306"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h2_wal_selftest\\partial_copy.wal",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h2_wal_selftest\\partial_copy.wal",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1594"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h2_wal_selftest\\v03h2_recovered_store.bdb",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h2_wal_selftest\\v03h2_recovered_store.bdb",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "231"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h2_wal_selftest\\v03h2_selftest.wal",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h2_wal_selftest\\v03h2_selftest.wal",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1603"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_state.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_state.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "630"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_store.bdb",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_store.bdb",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "553"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_tail.wal",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_tail.wal",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2384"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_recovered_store.bdb",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_recovered_store.bdb",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "553"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_recovery_state.json",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_recovery_state.json",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "628"
+                   },
+                   {
+                       "source":  "balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_selftest.wal",
+                       "dest":  "python_ref\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_selftest.wal",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2395"
+                   },
+                   {
+                       "source":  "balloondb_core\\reports\\selftest_v03g9_report.html",
+                       "dest":  "python_ref\\balloondb_core\\reports\\selftest_v03g9_report.html",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2031"
+                   },
+                   {
+                       "source":  "balloondb_core\\reports\\v03g1_selftest_report.html",
+                       "dest":  "python_ref\\balloondb_core\\reports\\v03g1_selftest_report.html",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "341"
+                   },
+                   {
+                       "source":  "balloondb_core\\reports\\v03g2_selftest_report.html",
+                       "dest":  "python_ref\\balloondb_core\\reports\\v03g2_selftest_report.html",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "715"
+                   },
+                   {
+                       "source":  "balloondb_core\\reports\\v03g3_selftest_report.html",
+                       "dest":  "python_ref\\balloondb_core\\reports\\v03g3_selftest_report.html",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1339"
+                   },
+                   {
+                       "source":  "balloondb_core\\reports\\validation_report.html",
+                       "dest":  "python_ref\\balloondb_core\\reports\\validation_report.html",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1162"
+                   },
+                   {
+                       "source":  "balloondb_core\\role_map_loader.py",
+                       "dest":  "python_ref\\balloondb_core\\role_map_loader.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "679"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\__init__.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\__init__.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "0"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\bql_compat_fix_v03h4a.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\bql_compat_fix_v03h4a.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "774"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_core_regression_gate_v03h4.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_core_regression_gate_v03h4.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "6948"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3374"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g1.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g1.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "1445"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g2.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g2.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "2490"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g3.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g3.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4423"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g4.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g4.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4586"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g6.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g6.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5014"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g7_all.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g7_all.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "12997"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g8.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g8.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5034"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03g9.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03g9.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "12600"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03h1.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03h1.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "3343"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03h2.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03h2.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "4494"
+                   },
+                   {
+                       "source":  "balloondb_core\\selftest\\run_selftest_v03h3.py",
+                       "dest":  "python_ref\\balloondb_core\\selftest\\run_selftest_v03h3.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "5223"
+                   },
+                   {
+                       "source":  "balloondb_core\\storage_format_v03h1.py",
+                       "dest":  "python_ref\\balloondb_core\\storage_format_v03h1.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "8370"
+                   },
+                   {
+                       "source":  "balloondb_core\\wal_v03h2.py",
+                       "dest":  "python_ref\\balloondb_core\\wal_v03h2.py",
+                       "decision":  "REPO_CORE_SOURCE",
+                       "bytes":  "9358"
+                   }
+               ],
+    "skipped":  [
+
+                ]
+}

@@ -1,0 +1,5 @@
+FROM seed("PY_NAMEERROR_UNDEFINED_NAME") BALLOON radius=2 direction=up_down RETURN concept,evidence
+FROM concept("CONTROL_FLOW_STRUCTURE") BALLOON radius=2 direction=down RETURN evidence,signature
+EXPLAIN FROM seed("RUST_BRANCH_OR_LOOP_CONTRACT_FAIL") BALLOON radius=3 direction=up_down FILTER promotion_status="promoted_concept" RETURN route,evidence
+DELETE FROM seed("BAD") BALLOON radius=2 direction=up_down RETURN concept
+FROM seed("BAD_RADIUS") BALLOON radius=99 direction=up_down RETURN concept

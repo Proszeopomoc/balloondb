@@ -1,0 +1,34 @@
+{
+  "repo_name": "balloondb",
+  "commit_policy": "curated_subset_only",
+  "include_now": [
+    "docs/ARCHITECTURE.md",
+    "docs/PRODUCT_BOUNDARIES.md",
+    "specs/GLOSSARY.md",
+    "specs/FORMAT_SPEC.md",
+    "specs/BQL_SPEC.md",
+    "specs/SOURCE_MEMORY_SPEC.md",
+    "python_ref/balloondb_core/",
+    "tests/",
+    "benchmarks/BENCHMARK_PLAN.md",
+    "examples/binary_small/",
+    "migration/from_bpack/README.md",
+    "_frozen/G5_AUTONOMY_DRIFT.md"
+  ],
+  "exclude_from_git": [
+    "workspace/",
+    "logs/",
+    "existing_projects_shadow/",
+    "_shadows/",
+    "compiled artifacts (*.exe, target/, __pycache__)",
+    "large .bpack files > 5MB",
+    "API repair materializations",
+    "operator runtime state"
+  ],
+  "do_next": [
+    "extract clean balloondb_core only",
+    "write specs before code changes",
+    "freeze G5 by documentation",
+    "then repair H4 BQL compatibility as a controlled core task"
+  ]
+}

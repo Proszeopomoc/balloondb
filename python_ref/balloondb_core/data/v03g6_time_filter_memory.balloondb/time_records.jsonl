@@ -1,0 +1,4 @@
+{"id": "recent", "seed": "TIME_SEED", "concept": "RECENT", "summary": "inside last hour", "ts": 1781538398566, "depth": 1}
+{"id": "older", "seed": "TIME_SEED", "concept": "OLDER", "summary": "outside last hour", "ts": 1781532998566, "depth": 1}
+{"id": "week_old", "seed": "TIME_SEED", "concept": "WEEK_OLD", "summary": "outside last seven days", "ts": 1780848998566, "depth": 1}
+{"id": "missing_ts", "seed": "TIME_SEED", "concept": "NO_TS", "summary": "missing timestamp", "depth": 1}

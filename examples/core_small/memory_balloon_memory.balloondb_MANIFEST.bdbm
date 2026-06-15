@@ -1,0 +1,27 @@
+{
+  "created_or_updated_at": 1781524604627,
+  "magic": "BALLOON_OPERATOR_V02_MEMORY",
+  "root": "C:\\BalloonOperator",
+  "states": [
+    "IDEA_RECEIVED",
+    "SPEC_CREATED",
+    "PROJECT_CREATED",
+    "STATIC_TEST_PASS",
+    "FUNCTIONAL_TEST_PASS",
+    "RELEASE_CREATED",
+    "FAILED_NEEDS_FIX",
+    "ARCHIVED"
+  ],
+  "templates": [
+    "python_cli",
+    "python_web_fastapi",
+    "local_dashboard",
+    "csv_reporter",
+    "file_indexer",
+    "scraper",
+    "api_client",
+    "desktop_tool",
+    "data_pipeline",
+    "agent_tool"
+  ]
+}

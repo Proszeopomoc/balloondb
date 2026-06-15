@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>BalloonDB V03G3 query report and error contract</title></head>
+<body>
+<h1>BalloonDB V03G3 query report and error contract</h1>
+<p>PASS=6 FAIL=0</p>
+<table border="1" cellpadding="6">
+<tr><th>Case</th><th>Result</th><th>Status</th><th>Error code</th><th>Expected</th></tr>
+<tr><td>legal_EXECUTED_word_not_blocked</td><td>PASS</td><td>PASS_V03G2_BQL_QUERY_EXECUTED</td><td></td><td>ok=True status=PASS_V03G2_BQL_QUERY_EXECUTED</td></tr><tr><td>standalone_EXEC_rejected</td><td>PASS</td><td>BQL_UNSAFE_TOKEN</td><td>BQL_UNSAFE_TOKEN</td><td>ok=False status=BQL_UNSAFE_TOKEN</td></tr><tr><td>radius_gt_3_rejected_by_executor</td><td>PASS</td><td>BQL_RADIUS_OUT_OF_BOUNDS</td><td>BQL_RADIUS_OUT_OF_BOUNDS</td><td>ok=False status=BQL_RADIUS_OUT_OF_BOUNDS</td></tr><tr><td>top_gt_50_rejected</td><td>PASS</td><td>BQL_TOP_OUT_OF_BOUNDS</td><td>BQL_TOP_OUT_OF_BOUNDS</td><td>ok=False status=BQL_TOP_OUT_OF_BOUNDS</td></tr><tr><td>select_syntax_rejected_safely</td><td>PASS</td><td>BQL_UNSUPPORTED_SYNTAX</td><td>BQL_UNSUPPORTED_SYNTAX</td><td>ok=False status=BQL_UNSUPPORTED_SYNTAX</td></tr><tr><td>query_output_contract_positive</td><td>PASS</td><td>PASS_V03G2_BQL_QUERY_EXECUTED</td><td></td><td>ok=True status=PASS_V03G2_BQL_QUERY_EXECUTED</td></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿FROM seed("PASS_V03G1_BQL_QUERY_EXECUTED") BALLOON radius=2 direction=up_down FILTER pack="code_patterns.bpack" RETURN pattern_id,summary TOP 5

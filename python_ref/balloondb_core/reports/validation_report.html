@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>BalloonDB V03G0 BQL Selftest</title></head>
+<body>
+<h1>PASS_V03G0_BQL_SELFTEST</h1>
+<p>pass_count=5 fail_count=0</p>
+<table border="1" cellpadding="6">
+<tr><th>Query</th><th>Status</th><th>Message</th></tr>
+<tr><td>FROM seed(&quot;PY_NAMEERROR_UNDEFINED_NAME&quot;) BALLOON radius=2 direction=up_down RETURN concept,evidence</td><td>PASS</td><td></td></tr>
+<tr><td>FROM concept(&quot;CONTROL_FLOW_STRUCTURE&quot;) BALLOON radius=2 direction=down RETURN evidence,signature</td><td>PASS</td><td></td></tr>
+<tr><td>EXPLAIN FROM seed(&quot;RUST_BRANCH_OR_LOOP_CONTRACT_FAIL&quot;) BALLOON radius=3 direction=up_down FILTER promotion_status=&quot;promoted_concept&quot; RETURN route,evidence</td><td>PASS</td><td></td></tr>
+<tr><td>DELETE FROM seed(&quot;BAD&quot;) BALLOON radius=2 direction=up_down RETURN concept</td><td>PASS_EXPECTED_REJECT</td><td>unsafe token rejected: DELETE</td></tr>
+<tr><td>FROM seed(&quot;BAD_RADIUS&quot;) BALLOON radius=99 direction=up_down RETURN concept</td><td>PASS_EXPECTED_REJECT</td><td>radius out of bounds: 99; allowed 1..3</td></tr>
+</table>
+</body></html>

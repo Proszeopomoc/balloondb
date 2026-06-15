@@ -1,0 +1,65 @@
+{
+  "bounded_metadata_only": true,
+  "created_at": 1781540198894,
+  "extras": {
+    "history_status": "ok"
+  },
+  "feature_version": "V03G9_QUERY_HISTORY_AND_EXPLAIN_TRACE",
+  "plan_version": "V03G9_SELFTEST_QUERY_HISTORY_AND_EXPLAIN_TRACE",
+  "query_hash": "7990c3900d2b3c6a449fb9273a319d79b1ba401d11c69197e25d2201f93f90cb",
+  "safety_flags": {
+    "bounded_metadata_only": true,
+    "no_full_graph_export": true,
+    "no_network": true,
+    "no_wal": true,
+    "no_write": true,
+    "read_only": true
+  },
+  "stages": [
+    {
+      "diagnostics": {
+        "executor_status": "PASS_V03G8_BQL_QUERY_EXECUTED"
+      },
+      "elapsed_ms": 5,
+      "finished_at": 1781540198873,
+      "name": "parse",
+      "started_at": 1781540198868,
+      "summary": "query accepted by parser"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 5,
+      "finished_at": 1781540198878,
+      "name": "plan",
+      "started_at": 1781540198873,
+      "summary": "read-only bounded plan metadata prepared"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 5,
+      "finished_at": 1781540198883,
+      "name": "filter",
+      "started_at": 1781540198878,
+      "summary": "filters evaluated within bounded query path"
+    },
+    {
+      "diagnostics": {
+        "executor_status": "PASS_V03G8_BQL_QUERY_EXECUTED"
+      },
+      "elapsed_ms": 5,
+      "finished_at": 1781540198888,
+      "name": "execute",
+      "started_at": 1781540198883,
+      "summary": "executor completed with bounded metadata"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 6,
+      "finished_at": 1781540198894,
+      "name": "return",
+      "started_at": 1781540198888,
+      "summary": "returned_count=1"
+    }
+  ],
+  "type": "BQL_EXPLAIN_TRACE"
+}

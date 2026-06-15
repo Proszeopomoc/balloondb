@@ -1,0 +1,67 @@
+{
+  "bounded_metadata_only": true,
+  "created_at": 1781540198902,
+  "extras": {
+    "history_status": "rejected"
+  },
+  "feature_version": "V03G9_QUERY_HISTORY_AND_EXPLAIN_TRACE",
+  "plan_version": "V03G9_SELFTEST_QUERY_HISTORY_AND_EXPLAIN_TRACE",
+  "query_hash": "a6ec7a332eaeac88521ce32a8bc601e2d11d5404dc3569be5a534855ab505734",
+  "safety_flags": {
+    "bounded_metadata_only": true,
+    "no_full_graph_export": true,
+    "no_network": true,
+    "no_wal": true,
+    "no_write": true,
+    "read_only": true
+  },
+  "stages": [
+    {
+      "diagnostics": {
+        "error": "unsafe token rejected: DELETE",
+        "error_type": "ParseError"
+      },
+      "elapsed_ms": 0,
+      "finished_at": 1781540198902,
+      "name": "parse",
+      "started_at": 1781540198902,
+      "summary": "query rejected or failed before completion"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 0,
+      "finished_at": 1781540198902,
+      "name": "plan",
+      "started_at": 1781540198902,
+      "summary": "plan skipped or failed"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 0,
+      "finished_at": 1781540198902,
+      "name": "filter",
+      "started_at": 1781540198902,
+      "summary": "filter skipped or failed"
+    },
+    {
+      "diagnostics": {
+        "error": "unsafe token rejected: DELETE",
+        "error_type": "ParseError"
+      },
+      "elapsed_ms": 0,
+      "finished_at": 1781540198902,
+      "name": "execute",
+      "started_at": 1781540198902,
+      "summary": "executor rejected or raised an error"
+    },
+    {
+      "diagnostics": {},
+      "elapsed_ms": 0,
+      "finished_at": 1781540198902,
+      "name": "return",
+      "started_at": 1781540198902,
+      "summary": "no result payload persisted"
+    }
+  ],
+  "type": "BQL_EXPLAIN_TRACE"
+}

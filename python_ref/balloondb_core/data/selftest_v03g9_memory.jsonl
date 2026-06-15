@@ -1,0 +1,2 @@
+{"concept": "V03G9_HISTORY_ROOT", "depth": 0, "evidence": "safe local selftest evidence root", "id": "V03G9_SEED", "neighbors": ["V03G9_CHILD"], "pack": "selftest_v03g9", "parent_id": "", "record_id": "V03G9_SEED", "summary": "bounded metadata selftest root"}
+{"concept": "V03G9_HISTORY_CHILD", "depth": 1, "evidence": "safe local selftest evidence child", "id": "V03G9_CHILD", "neighbors": [], "pack": "selftest_v03g9", "parent_id": "V03G9_SEED", "record_id": "V03G9_CHILD", "summary": "bounded metadata selftest child"}

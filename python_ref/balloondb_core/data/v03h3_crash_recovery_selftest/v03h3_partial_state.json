@@ -1,0 +1,20 @@
+{
+  "schema_version": "V03H3",
+  "applied_tx_ids": [
+    "TX_CRASH_COMMITTED_1",
+    "TX_CRASH_COMMITTED_2"
+  ],
+  "created_ts": 1781540191715,
+  "updated_ts": 1781540191727,
+  "last_recovery": {
+    "wal_path": "C:\\BalloonOperator\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_tail.wal",
+    "store_path": "C:\\BalloonOperator\\balloondb_core\\data\\v03h3_crash_recovery_selftest\\v03h3_partial_store.bdb",
+    "committed_seen": 2,
+    "pending_seen": 2,
+    "aborted_seen": 0,
+    "applied_this_run": 2,
+    "skipped_this_run": 0,
+    "errors_this_run": 0,
+    "ts": 1781540191727
+  }
+}

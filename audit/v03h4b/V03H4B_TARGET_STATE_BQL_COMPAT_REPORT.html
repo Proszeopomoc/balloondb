@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>BalloonDB V03H4B target-state BQL compatibility</title>
+<h1>BalloonDB V03H4B target-state BQL compatibility</h1>
+<table border="1" cellpadding="6">
+<tr><th>case</th><th>pass</th><th>status</th><th>error</th></tr>
+<tr><td>legal_EXECUTED_word_not_blocked</td><td>PASS</td><td>PASS_V03G2_BQL_QUERY_EXECUTED</td><td><pre>null</pre></td></tr>
+<tr><td>standalone_EXEC_rejected</td><td>PASS</td><td>BQL_UNSAFE_TOKEN</td><td><pre>{
+  &quot;code&quot;: &quot;BQL_UNSAFE_TOKEN&quot;,
+  &quot;class&quot;: &quot;ParseError&quot;,
+  &quot;message&quot;: &quot;unsafe token rejected: EXEC&quot;,
+  &quot;retryable&quot;: false
+}</pre></td></tr>
+<tr><td>radius_gt_3_rejected_by_contract</td><td>PASS</td><td>BQL_RADIUS_OUT_OF_BOUNDS</td><td><pre>{
+  &quot;code&quot;: &quot;BQL_RADIUS_OUT_OF_BOUNDS&quot;,
+  &quot;class&quot;: &quot;ParseError&quot;,
+  &quot;message&quot;: &quot;radius out of bounds: 4; allowed 1..3&quot;,
+  &quot;retryable&quot;: false
+}</pre></td></tr>
+<tr><td>top_gt_50_rejected</td><td>PASS</td><td>BQL_TOP_OUT_OF_BOUNDS</td><td><pre>{
+  &quot;code&quot;: &quot;BQL_TOP_OUT_OF_BOUNDS&quot;,
+  &quot;class&quot;: &quot;ParseError&quot;,
+  &quot;message&quot;: &quot;TOP out of bounds: 51; allowed 1..50&quot;,
+  &quot;retryable&quot;: false
+}</pre></td></tr>
+<tr><td>select_syntax_rejected_safely</td><td>PASS</td><td>BQL_UNSUPPORTED_SYNTAX</td><td><pre>{
+  &quot;code&quot;: &quot;BQL_UNSUPPORTED_SYNTAX&quot;,
+  &quot;class&quot;: &quot;ParseError&quot;,
+  &quot;message&quot;: &quot;SELECT syntax not enabled in V03G6; use FROM seed(...) BALLOON ... RETURN ... TOP N&quot;,
+  &quot;retryable&quot;: false
+}</pre></td></tr>
+<tr><td>query_output_contract_positive</td><td>PASS</td><td>PASS_V03G2_BQL_QUERY_EXECUTED</td><td><pre>null</pre></td></tr>
+</table>

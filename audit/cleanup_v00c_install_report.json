@@ -1,0 +1,8 @@
+﻿{
+    "status":  "PASS_INSTALL_BALLOONDB_REPO_CLEANUP_V00C",
+    "staging_root":  "C:\\BalloonDB_REPO_STAGING",
+    "backup_root":  "C:\\BalloonDB_REPO_STAGING\\audit\\cleanup_v00c_backup_20260615_223919",
+    "h4a_frozen":  true,
+    "h4b_runner":  "scripts\\\\windows\\\\RUN_BQL_COMPAT_TARGET_V03H4B.ps1",
+    "ts":  1781555960029
+}

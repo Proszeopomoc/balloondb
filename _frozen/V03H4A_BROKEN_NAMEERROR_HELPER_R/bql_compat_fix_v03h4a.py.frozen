@@ -1,0 +1,22 @@
+"""Frozen broken H4A compatibility module.
+
+The original V03H4A contained a top-level `HELPER = r` bug and is intentionally
+not an active repair path. Use run_bql_compat_target_v03h4b.py instead.
+"""
+
+import json
+
+STATUS = "NO_GO_V03H4A_FROZEN_USE_V03H4B"
+
+
+def main():
+    print(json.dumps({
+        "status": STATUS,
+        "reason": "V03H4A had NameError: HELPER = r. It is frozen and replaced by target-state V03H4B.",
+        "replacement": "balloondb_core.selftest.run_bql_compat_target_v03h4b",
+    }, ensure_ascii=False, indent=2))
+    return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

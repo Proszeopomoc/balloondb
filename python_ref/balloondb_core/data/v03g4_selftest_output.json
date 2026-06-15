@@ -1,0 +1,54 @@
+{
+  "status": "PASS_V03G4_BQL_HOT_DAEMON_SELFTEST",
+  "version": "V03G4_BQL_HOT_DAEMON_AND_PACK_CACHE",
+  "port": 52803,
+  "query": "FROM seed(\"PASS_V03G3_BQL_SELFTEST\") BALLOON radius=2 direction=up_down RETURN pattern_id,summary TOP 10",
+  "cases": [
+    {
+      "name": "daemon_started",
+      "pass": true
+    },
+    {
+      "name": "direct_and_daemon_status_match",
+      "pass": true
+    },
+    {
+      "name": "cache_loaded_once_and_hit",
+      "pass": true
+    },
+    {
+      "name": "localhost_only_flag",
+      "pass": true
+    },
+    {
+      "name": "read_only_safety",
+      "pass": true
+    }
+  ],
+  "direct_status": "PASS_V03G2_BQL_QUERY_EXECUTED",
+  "daemon_status": "PASS_V03G2_BQL_QUERY_EXECUTED",
+  "daemon_stats": {
+    "status": "PASS_V03G4_DAEMON_STATS",
+    "version": "V03G4_BQL_HOT_DAEMON_AND_PACK_CACHE",
+    "cache_keys": [
+      "C:\\BalloonOperator\\memory\\balloon_memory.balloondb"
+    ],
+    "cache_size": 1,
+    "cache_hits": 1,
+    "cache_misses": 1,
+    "query_count": 2,
+    "uptime_ms": 540,
+    "read_only": true,
+    "localhost_only": true
+  },
+  "server_log": "C:\\BalloonOperator\\06_EVIDENCE\\BALLOONDB_BQL_CORE\\V03G4_DAEMON_SELFTEST_SERVER.log",
+  "safety": {
+    "read_only": true,
+    "localhost_only": true,
+    "no_write": true,
+    "no_wal": true,
+    "no_vector_engine": true,
+    "no_full_graph_export": true
+  },
+  "ts": 1781516041139
+}

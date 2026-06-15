@@ -1,0 +1,30 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Local/runtime outputs
+TMP/
+tmp/
+logs/
+*.log
+
+# Large/local audit outputs
+balloondb_repo_intake_refined_inventory.csv
+*_large*.csv
+large_files_over_5mb.csv
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
