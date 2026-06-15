@@ -22,6 +22,11 @@ $RequiredFiles = @(
   "specs\TRUST_STATE_SPEC.md",
   "specs\PRODUCT_ARCHITECTURE.md",
   "specs\FORMAT_SPEC.md",
+  "LICENSE",
+  "NOTICE.md",
+  "SECURITY.md",
+  "CONTRIBUTING.md",
+  "CHANGELOG.md",
   "scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1",
   "scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1",
   "scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
@@ -83,3 +88,4 @@ if ($Missing.Count -ne 0 -or $ActiveHits.Count -ne 0 -or $TrackedGenerated.Count
 
 $Summary | ConvertTo-Json -Depth 5
 Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00G"
+

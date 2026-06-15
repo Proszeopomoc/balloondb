@@ -16,6 +16,8 @@ Current status:
 
 - v0.0.1-root-portable
 - v0.0.2-repo-hygiene
+- v0.0.3-product-gate
+- v0.0.4-agpl-license
 
 ## Product boundary
 
@@ -41,3 +43,15 @@ Expected:
 ```text
 PASS_BALLOONDB_PRODUCT_GATE_V00G
 ```
+
+## License
+
+BalloonDB is licensed under the GNU Affero General Public License version 3 only.
+
+SPDX-License-Identifier: AGPL-3.0-only
+
+Commercial use is allowed under AGPL-3.0 terms. If a company or project needs different terms, a separate commercial license may be negotiated with the copyright holder.
+
+## Security and warranty
+
+BalloonDB is experimental software provided as-is, without warranty. Use it at your own risk and do not use it for sensitive or production data without independent validation.
