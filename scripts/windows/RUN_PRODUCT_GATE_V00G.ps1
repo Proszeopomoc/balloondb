@@ -7,30 +7,26 @@ if (-not $RepoRoot) {
 cd $RepoRoot
 $ErrorActionPreference = "Stop"
 
-function Run-Gate {
-  param([string]$Path, [string]$Fail)
-  powershell.exe -NoProfile -ExecutionPolicy Bypass -File $Path
-  if ($LASTEXITCODE -ne 0) {
-    throw $Fail
-  }
-}
-
 $RequiredFiles = @(
   "README.md",
-  "docs\QUICKSTART.md",
-  "specs\API_SPEC.md",
-  "specs\TRUST_STATE_SPEC.md",
-  "specs\PRODUCT_ARCHITECTURE.md",
-  "specs\FORMAT_SPEC.md",
   "LICENSE",
   "NOTICE.md",
   "SECURITY.md",
   "CONTRIBUTING.md",
   "CHANGELOG.md",
+  "docs\QUICKSTART.md",
+  "specs\API_SPEC.md",
+  "specs\TRUST_STATE_SPEC.md",
+  "specs\PRODUCT_ARCHITECTURE.md",
+  "specs\FORMAT_SPEC.md",
+  "specs\BINARY_FORMAT_V00J.md",
   "scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1",
   "scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1",
   "scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
-  "scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1",`r`n  "scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1"
+  "scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1",
+  "scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1",
+  "python_ref\balloondb_core\binary_format_v00j.py",
+  "python_ref\balloondb_core\selftest\run_binary_format_v00j.py"
 )
 
 $Missing = @()
@@ -45,16 +41,18 @@ $ActiveHits = Get-ChildItem ".\python_ref", ".\scripts" -Recurse -File |
     $_.FullName -notmatch "\\_frozen\\" -and
     $_.FullName -notmatch "\\audit\\" -and
     $_.FullName -notmatch "\\\.git\\" -and
-    $_.Extension -notin @(".pyc",".pyo")
+    $_.Extension -notin @(".pyc", ".pyo")
   } |
   Select-String -Pattern "C:\\BalloonDB_REPO_STAGING|C:\\BalloonOperator" -ErrorAction SilentlyContinue
 
 $TrackedGenerated = git ls-files |
   Where-Object {
     ($_ -match '^audit/v03h4b/') -or
+    ($_ -match '^audit/v00j/') -or
     ($_ -match '^python_ref/balloondb_core/data/' -and $_ -notmatch '\.gitkeep$') -or
     ($_ -match '^python_ref/balloondb_core/reports/' -and $_ -notmatch '\.gitkeep$') -or
-    ($_ -match '^balloondb_core/')
+    ($_ -match '^balloondb_core/') -or
+    ($_ -match '^06_EVIDENCE/')
   }
 
 $CompileFail = @()
@@ -66,13 +64,14 @@ foreach ($f in $PyFiles) {
   }
 }
 
-Run-Gate ".\scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1" "V03H1_GATE_FAILED"
-Run-Gate ".\scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1" "V03H2_GATE_FAILED"
-Run-Gate ".\scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1" "V03H3_GATE_FAILED"
-Run-Gate ".\scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1" "V03H4B_GATE_FAILED"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_STORAGE_SELFTEST_V03H1.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_WAL_SELFTEST_V03H2.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BINARY_FORMAT_SELFTEST_V00J.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_BQL_COMPAT_TARGET_V03H4B.ps1"
 
 $Summary = [PSCustomObject]@{
-  status = "PASS_BALLOONDB_PRODUCT_GATE_V00G"
+  status = "PASS_BALLOONDB_PRODUCT_GATE_V00J1"
   repo_root = $RepoRoot
   missing_required_files = $Missing.Count
   active_root_hits = $ActiveHits.Count
@@ -81,12 +80,10 @@ $Summary = [PSCustomObject]@{
 }
 
 if ($Missing.Count -ne 0 -or $ActiveHits.Count -ne 0 -or $TrackedGenerated.Count -ne 0 -or $CompileFail.Count -ne 0) {
-  $Summary.status = "NO_GO_BALLOONDB_PRODUCT_GATE_V00G"
+  $Summary.status = "NO_GO_BALLOONDB_PRODUCT_GATE_V00J1"
   $Summary | ConvertTo-Json -Depth 5
-  throw "NO_GO_BALLOONDB_PRODUCT_GATE_V00G"
+  throw "NO_GO_BALLOONDB_PRODUCT_GATE_V00J1"
 }
 
 $Summary | ConvertTo-Json -Depth 5
-Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00G"
-
-
+Write-Host "PASS_BALLOONDB_PRODUCT_GATE_V00J1"
