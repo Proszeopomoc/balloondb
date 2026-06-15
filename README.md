@@ -66,3 +66,8 @@ BalloonDB now includes a first binary storage core for .bseed, .bbridge, .bwal, 
 
 BalloonDB now includes .bindex support over V00J .bseed and .bbridge files, with lookup by record id, type, trust state, relation, and a minimal binary query subset. Run scripts/windows/RUN_BINARY_INDEX_QUERY_SELFTEST_V00K.ps1 to verify indexing and query behavior.
 
+
+## V00L binary compaction and snapshot
+
+BalloonDB now includes WAL compaction into binary snapshots, snapshot manifest generation, complete-snapshot recovery, and corrupt snapshot detection. Run `scripts/windows/RUN_BINARY_COMPACTION_SNAPSHOT_SELFTEST_V00L.ps1` to verify compaction and recovery behavior.
+

@@ -1,4 +1,11 @@
-﻿## v0.0.7-binary-index-query
+﻿## v0.0.8-binary-compaction-snapshot
+
+- Added binary snapshot compaction from base files plus WAL.
+- Added snapshot manifest and SNAPSHOT_COMPLETE marker.
+- Added recovery from complete binary snapshot.
+- Added corrupt snapshot detection.
+
+## v0.0.7-binary-index-query
 
 - Added .bindex binary index envelope.
 - Added record id, type, trust state, relation, and logical id lookup.
@@ -41,5 +48,6 @@
 
 - Initial clean BalloonDB staging baseline.
 - Separated core repository from BalloonOperator workspace.
+
 
 
