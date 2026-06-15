@@ -1,12 +1,24 @@
-﻿# Format spec V0
+﻿# BalloonDB Format Spec
 
-Runtime target formats:
+## Runtime formats
 
-- `.bseed` â€” facts, symbols, tasks, errors, rules, source refs.
-- `.bbridge` â€” typed relations between seeds/records.
-- `.broute` â€” proven traversals/repair/decision paths.
-- `.bindex` â€” fast hash/token/source lookup.
-- `.bpromote` â€” promoted high-confidence local rules.
-- `.bwal` â€” append-only recovery/audit log.
+- .bseed   â€” binary seed records
+- .bbridge â€” binary bridge records
+- .bwal    â€” write-ahead log
+- .bindex  â€” index file
+- .broute  â€” route file
+- .bpack   â€” pack/archive format
 
-Reference implementation starts in Python. Rust hot-path follows after the format contract and regression gates are stable.
+## Human-readable formats
+
+- .json
+- .jsonl
+- .md
+- .html
+- .csv
+
+Human-readable files are allowed for audit, debugging, reports, examples, and migration. They are not the target hot-path runtime format.
+
+## Generated outputs
+
+Generated test outputs must not be committed to Git unless explicitly promoted as fixtures.

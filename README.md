@@ -1,24 +1,43 @@
 ﻿# BalloonDB
 
-Agent-native binary memory database.
+BalloonDB is an agent-native memory database for graph memory, evidence, routes, query traces, and verifiable promotion states.
 
-BalloonDB is a database engine for AI agents: seeds, balloons, bridges, evidence, routes, binary storage, WAL/recovery, BQL, source memory and safe agent/model APIs.
+Current status:
 
-This repository is the clean BalloonDB core. It intentionally excludes BalloonOperator runtime, G5 autonomy, large local `.bpack` packs, logs, workspaces and API materializations.
+- Python reference implementation
+- Storage / WAL / crash recovery selftests
+- BQL compatibility gate
+- Root-portable fresh clone verified
+- Generated outputs excluded from Git
+- Broken V03H4A frozen
+- Active BQL target: V03H4B
+
+## Stable tags
+
+- v0.0.1-root-portable
+- v0.0.2-repo-hygiene
 
 ## Product boundary
 
-- BalloonDB = database + engine.
-- BalloonOperator = client, later.
-- AI adapters = clients, later.
-- External databases = adapters/providers, not core.
-- JSON/HTML = audit and debug.
-- Binary `.bseed/.bbridge/.broute/.bindex/.bpromote/.bwal` = runtime target.
+BalloonDB is the database layer.
 
-## Current staged contents
+It is not:
 
-- `python_ref/balloondb_core/` â€” Python reference implementation and selftests.
-- `scripts/windows/` â€” reviewed Windows wrappers for core tests.
-- `examples/` â€” tiny binary/index/WAL examples only.
-- `specs/` â€” product-level format/query/source-memory contracts.
-- `_frozen/` â€” frozen autonomy drift note only, not runnable autonomy.
+- the full BalloonOperator runtime
+- an AI model
+- an autonomous patching agent
+- a truth source controlled by an LLM
+
+AI systems may write RAW, HYPOTHESIS, and CANDIDATE records. Promotion to VERIFIED or PROMOTED requires deterministic evidence.
+
+## Product gate
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\scripts\windows\RUN_PRODUCT_GATE_V00G.ps1"
+```
+
+Expected:
+
+```text
+PASS_BALLOONDB_PRODUCT_GATE_V00G
+```
