@@ -71,3 +71,6 @@ BalloonDB now includes .bindex support over V00J .bseed and .bbridge files, with
 
 BalloonDB now includes WAL compaction into binary snapshots, snapshot manifest generation, complete-snapshot recovery, and corrupt snapshot detection. Run `scripts/windows/RUN_BINARY_COMPACTION_SNAPSHOT_SELFTEST_V00L.ps1` to verify compaction and recovery behavior.
 
+
+- v0.0.9-binary-transaction-atomic-commit
+

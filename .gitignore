@@ -47,3 +47,7 @@ Thumbs.db
 /audit/v00k/**
 /audit/v03h4b/**
 /audit/v00l/**
+
+/audit/v00m/**
+/python_ref/balloondb_core/data/v00m_transaction_selftest/**
+

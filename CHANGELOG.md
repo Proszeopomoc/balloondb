@@ -51,3 +51,9 @@
 
 
 
+
+## v0.0.9-binary-transaction-atomic-commit
+
+- Added V00M binary transaction and atomic commit selftest.
+- Added versioned snapshots with CURRENT pointer recovery.
+
