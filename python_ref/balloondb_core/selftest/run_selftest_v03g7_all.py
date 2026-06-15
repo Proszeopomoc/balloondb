@@ -1,3 +1,4 @@
+from pathlib import Path
 import argparse
 import json
 import os
@@ -10,7 +11,7 @@ import html
 
 Path = pathlib.Path
 
-ROOT = Path(r"C:\BalloonOperator")
+ROOT = Path(__file__).resolve().parents[3]
 DEFAULT_SCRIPTS_DIR = ROOT / "09_SCRIPTS"
 DEFAULT_OUT_JSON = ROOT / "data" / "v03g7_bql_regression_report.json"
 DEFAULT_OUT_HTML = ROOT / "reports" / "v03g7_bql_regression_summary.html"
@@ -105,7 +106,7 @@ def run_layer(layer, script_path, timeout_sec, verbose):
         str(script_path),
     ]
     env = dict(os.environ)
-    env["PYTHONPATH"] = r"C:\BalloonOperator"
+    env["PYTHONPATH"] = str(ROOT / "python_ref")
     env["PYTHONIOENCODING"] = "utf-8"
 
     if verbose:
@@ -181,7 +182,7 @@ def build_report(status, scripts_dir, discovered, skipped, results, timeout_sec)
             "arbitrary_script_execution": False,
             "network_exposure": False,
             "subprocess_cwd": str(ROOT),
-            "pythonpath_exact": r"C:\BalloonOperator",
+            "pythonpath_exact": str(ROOT / "python_ref"),
             "pythonioencoding": "utf-8",
         },
         "ts_ms": now_ms(),

@@ -128,7 +128,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=8765)
-    ap.add_argument("--memory-root", default=r"C:\BalloonOperator\memory\balloon_memory.balloondb")
+    ap.add_argument("--memory-root", default=str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb"))
     args = ap.parse_args(argv)
 
     if args.host not in ("127.0.0.1", "localhost", "::1"):

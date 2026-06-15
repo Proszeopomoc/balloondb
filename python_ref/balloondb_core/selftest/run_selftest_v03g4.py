@@ -9,7 +9,7 @@ from pathlib import Path
 from balloondb_core.bql_contract_runner import run_query_contract
 from balloondb_core.bql_daemon_client import send_request
 
-ROOT = Path(r"C:\BalloonOperator")
+ROOT = Path(__file__).resolve().parents[3]
 EVIDENCE = ROOT / "06_EVIDENCE" / "BALLOONDB_BQL_CORE"
 DATA = ROOT / "balloondb_core" / "data"
 REPORTS = ROOT / "balloondb_core" / "reports"

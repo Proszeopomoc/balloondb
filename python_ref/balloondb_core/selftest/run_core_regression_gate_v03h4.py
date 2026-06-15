@@ -4,7 +4,7 @@ import subprocess
 import time
 from pathlib import Path
 
-ROOT = Path(r"C:\BalloonOperator")
+ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "06_EVIDENCE" / "BALLOONDB_V03H4_CORE_REGRESSION_RELEASE_GATE"
 
 TEST_PLAN = [

@@ -5,8 +5,8 @@ from pathlib import Path
 from balloondb_core.bql_contract_runner import run_query_contract
 from balloondb_core.bql_error_contract import write_jsonl, write_html_report, write_json
 
-ROOT = Path(r"C:\BalloonOperator")
-CORE = ROOT / "balloondb_core"
+ROOT = Path(__file__).resolve().parents[3]
+CORE = ROOT / "python_ref" / "balloondb_core"
 EVIDENCE = ROOT / "06_EVIDENCE" / "BALLOONDB_BQL_CORE"
 
 def _case(name, query, memory_root, expect_ok=None, expect_status=None):

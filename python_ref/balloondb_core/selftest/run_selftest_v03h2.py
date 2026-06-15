@@ -15,7 +15,7 @@ from balloondb_core.wal_v03h2 import (
 )
 from balloondb_core.storage_format_v03h1 import read_all_records, build_index
 
-ROOT = Path(r"C:\BalloonOperator")
+ROOT = Path(__file__).resolve().parents[3]
 DATA = ROOT / "balloondb_core" / "data" / "v03h2_wal_selftest"
 REPORT_DIR = ROOT / "06_EVIDENCE" / "BALLOONDB_V03H2"
 

@@ -3,8 +3,8 @@ from pathlib import Path
 from balloondb_core.bql_parser import parse, ParseError
 from balloondb_core.bql_planner import explain
 
-ROOT = Path(r"C:\BalloonOperator")
-CORE = ROOT / "balloondb_core"
+ROOT = Path(__file__).resolve().parents[3]
+CORE = ROOT / "python_ref" / "balloondb_core"
 
 def run_selftest():
     data_dir = CORE / "data"

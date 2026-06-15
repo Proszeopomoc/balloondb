@@ -32,7 +32,7 @@ def main(argv=None):
     ap.add_argument("--cmd", default="query", choices=["query", "stats", "shutdown", "bench"])
     ap.add_argument("--query", default="")
     ap.add_argument("--query-file", default="")
-    ap.add_argument("--memory-root", default=r"C:\BalloonOperator\memory\balloon_memory.balloondb")
+    ap.add_argument("--memory-root", default=str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb"))
     ap.add_argument("--max-results", type=int, default=50)
     ap.add_argument("--repeat", type=int, default=20)
     ap.add_argument("--out-json", default="")

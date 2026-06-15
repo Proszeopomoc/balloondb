@@ -98,7 +98,7 @@ def _query_args(p):
     p.add_argument("--query-file", required=False)
 
 def _query_exec_args(p):
-    p.add_argument("--memory-root", default=r"C:\BalloonOperator\memory\balloon_memory.balloondb")
+    p.add_argument("--memory-root", default=str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb"))
     p.add_argument("--max-results", type=int, default=50)
     p.add_argument("--out-jsonl", required=False, default="")
     p.add_argument("--out-html", required=False, default="")
@@ -122,24 +122,24 @@ def main(argv=None):
     p.set_defaults(fn=cmd_query)
 
     p = sub.add_parser("validate-scripts")
-    p.add_argument("--role-map", default=r"C:\BalloonOperator\config\BALLOONDB_V03G0_SCRIPT_ROLE_MAP.json")
+    p.add_argument("--role-map", default=str(Path(__file__).resolve().parents[2] / "examples" / "config" / "BALLOONDB_V03G0_SCRIPT_ROLE_MAP.json"))
     p.set_defaults(fn=cmd_validate_scripts)
 
     p = sub.add_parser("selftest")
     p.set_defaults(fn=cmd_selftest)
 
     p = sub.add_parser("selftest-v03g1")
-    p.add_argument("--memory-root", default=r"C:\BalloonOperator\memory\balloon_memory.balloondb")
+    p.add_argument("--memory-root", default=str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb"))
     p.set_defaults(fn=cmd_selftest_v03g1)
 
     p = sub.add_parser("selftest-v03g2")
-    p.add_argument("--memory-root", default=r"C:\BalloonOperator\memory\balloon_memory.balloondb")
+    p.add_argument("--memory-root", default=str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb"))
     p.set_defaults(fn=cmd_selftest_v03g2)
 
     args = ap.parse_args(argv)
 
     if args.cmd is None and args.positional_query:
-        args.memory_root = r"C:\BalloonOperator\memory\balloon_memory.balloondb"
+        args.memory_root = str(Path(__file__).resolve().parents[2] / "examples" / "core_small" / "memory" / "balloon_memory.balloondb")
         args.max_results = 50
         args.out_jsonl = ""
         args.out_html = ""

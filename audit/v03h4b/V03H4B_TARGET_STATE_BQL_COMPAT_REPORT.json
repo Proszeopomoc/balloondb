@@ -46,7 +46,7 @@
     "returned_count": 2,
     "output": "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\data\\v03g1_selftest_output.jsonl",
     "report": "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\reports\\v03g1_selftest_report.html",
-    "ts": 1781556429884
+    "ts": 1781557131608
   },
   "g2": {
     "status": "PASS_V03G2_BQL_SELFTEST",
@@ -55,7 +55,7 @@
     "fail_count": 0,
     "output": "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\data\\v03g2_selftest_output.jsonl",
     "report": "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\reports\\v03g2_selftest_report.html",
-    "ts": 1781556429886
+    "ts": 1781557131611
   },
   "checks": {
     "compile_all_targets": true,
@@ -116,5 +116,5 @@
     "no_operator_runtime_launch": true,
     "h4a_frozen": true
   },
-  "ts": 1781556429887
+  "ts": 1781557131612
 }

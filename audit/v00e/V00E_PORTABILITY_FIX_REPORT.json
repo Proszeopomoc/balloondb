@@ -1,0 +1,30 @@
+{
+  "status": "PASS_BALLOONDB_V00E_PORTABILITY_FIX",
+  "repo": "C:\\BalloonDB_REPO_STAGING",
+  "moved_count": 0,
+  "patched_count": 14,
+  "active_hardcoded_count": 0,
+  "active_hardcoded_hits": [],
+  "python_compile_fail_count": 0,
+  "python_compile_fail": [],
+  "h4b_returncode": 0,
+  "h4b_stdout_tail": "{\n  \"status\": \"PASS_V03H4B_TARGET_STATE_BQL_COMPAT\",\n  \"version\": \"BALLOONDB_REPO_CLEANUP_V00C_AND_V03H4B_TARGET_STATE_BQL_COMPAT\",\n  \"py_root\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\",\n  \"repo_root\": \"C:\\\\BalloonDB_REPO_STAGING\",\n  \"synthetic_memory\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\\\\balloondb_core\\\\data\\\\v03h4b_selftest\\\\synthetic_memory.jsonl\",\n  \"compile_results\": [\n    {\n      \"path\": \"bql_error_contract.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"bql_contract_runner.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"bql_parser.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"bql_executor.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"selftest/run_selftest_v03g1.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"selftest/run_selftest_v03g2.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"selftest/run_selftest_v03g3.py\",\n      \"status\": \"PASS_COMPILE\"\n    },\n    {\n      \"path\": \"selftest/run_bql_compat_target_v03h4b.py\",\n      \"status\": \"PASS_COMPILE\"\n    }\n  ],\n  \"g1\": {\n    \"status\": \"PASS_V03G1_BQL_SELFTEST\",\n    \"version\": \"V03G1_BQL_SEED_LOOKUP_AND_BALLOON_EXPAND_V0_COMPAT_H4B\",\n    \"query\": \"FROM seed(\\\"PASS_V03G0_BQL_SELFTEST\\\") BALLOON radius=2 direction=up_down RETURN route,evidence,concept\",\n    \"expanded_count\": 2,\n    \"returned_count\": 2,\n    \"output\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\\\\balloondb_core\\\\data\\\\v03g1_selftest_output.jsonl\",\n    \"report\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\\\\balloondb_core\\\\reports\\\\v03g1_selftest_report.html\",\n    \"ts\": 1781557131608\n  },\n  \"g2\": {\n    \"status\": \"PASS_V03G2_BQL_SELFTEST\",\n    \"version\": \"V03G2_BQL_FILTER_RANK_RETURN_COMPAT_H4B\",\n    \"pass_count\": 2,\n    \"fail_count\": 0,\n    \"output\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\\\\balloondb_core\\\\data\\\\v03g2_selftest_output.jsonl\",\n    \"report\": \"C:\\\\BalloonDB_REPO_STAGING\\\\python_ref\\\\balloondb_core\\\\reports\\\\v03g2_selftest_report.html\",\n    \"ts\": 1781557131611\n  },\n  \"checks\": {\n    \"compile_all_targets\": true,\n    \"v03g1_compat_selftest\": true,\n    \"v03g2_compat_selftest\": true,\n    \"contract_cases_all_pass\": true,\n    \"h4a_active_bug_removed\": true,\n    \"synthetic_memory_local_only\": true\n  },\n  \"cases\": [\n    {\n      \"name\": \"legal_EXECUTED_word_not_blocked\",\n      \"pass\": true,\n      \"status\": \"PASS_V03G2_BQL_QUERY_EXECUTED\",\n      \"ok\": true,\n      \"error_code\": null\n    },\n    {\n      \"name\": \"standalone_EXEC_rejected\",\n      \"pass\": true,\n      \"status\": \"BQL_UNSAFE_TOKEN\",\n      \"ok\": false,\n      \"error_code\": \"BQL_UNSAFE_TOKEN\"\n    },\n    {\n      \"name\": \"radius_gt_3_rejected_by_contract\",\n      \"pass\": true,\n      \"status\": \"BQL_RADIUS_OUT_OF_BOUNDS\",\n      \"ok\": false,\n      \"error_code\": \"BQL_RADIUS_OUT_OF_BOUNDS\"\n    },\n    {\n      \"name\": \"top_gt_50_rejected\",\n      \"pass\": true,\n      \"status\": \"BQL_TOP_OUT_OF_BOUNDS\",\n      \"ok\": false,\n      \"error_code\": \"BQL_TOP_OUT_OF_BOUNDS\"\n    },\n    {\n      \"name\": \"select_syntax_rejected_safely\",\n      \"pass\": true,\n      \"status\": \"BQL_UNSUPPORTED_SYNTAX\",\n      \"ok\": false,\n      \"error_code\": \"BQL_UNSUPPORTED_SYNTAX\"\n    },\n    {\n      \"name\": \"query_output_contract_positive\",\n      \"pass\": true,\n      \"status\": \"PASS_V03G2_BQL_QUERY_EXECUTED\",\n      \"ok\": true,\n      \"error_code\": null\n    }\n  ],\n  \"safety\": {\n    \"read_only_external_sources\": true,\n    \"no_network\": true,\n    \"no_api_call\": true,\n    \"no_operator_runtime_launch\": true,\n    \"h4a_frozen\": true\n  },\n  \"ts\": 1781557131612,\n  \"report_json\": \"C:\\\\BalloonDB_REPO_STAGING\\\\audit\\\\v03h4b\\\\V03H4B_TARGET_STATE_BQL_COMPAT_REPORT.json\",\n  \"report_html\": \"C:\\\\BalloonDB_REPO_STAGING\\\\audit\\\\v03h4b\\\\V03H4B_TARGET_STATE_BQL_COMPAT_REPORT.html\"\n}\nPASS_RUN_BQL_COMPAT_TARGET_V03H4B\n",
+  "h4b_stderr_tail": "",
+  "moved": [],
+  "patched": [
+    "C:\\BalloonDB_REPO_STAGING\\scripts\\windows\\RUN_STORAGE_SELFTEST_V03H1.ps1",
+    "C:\\BalloonDB_REPO_STAGING\\scripts\\windows\\RUN_WAL_SELFTEST_V03H2.ps1",
+    "C:\\BalloonDB_REPO_STAGING\\scripts\\windows\\RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\bql_daemon.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\bql_daemon_client.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\cli.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_core_regression_gate_v03h4.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03g3.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03g4.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03g7_all.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03h1.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03h2.py",
+    "C:\\BalloonDB_REPO_STAGING\\python_ref\\balloondb_core\\selftest\\run_selftest_v03h3.py"
+  ]
+}
