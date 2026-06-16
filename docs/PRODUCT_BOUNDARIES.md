@@ -1,4 +1,4 @@
-﻿# Product boundaries
+# Product boundaries
 
 ## Core
 

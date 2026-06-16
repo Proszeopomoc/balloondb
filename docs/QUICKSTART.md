@@ -1,4 +1,4 @@
-﻿# BalloonDB Quickstart
+# BalloonDB Quickstart
 
 ## Requirements
 

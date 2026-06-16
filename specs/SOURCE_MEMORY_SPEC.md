@@ -1,4 +1,4 @@
-﻿# Source memory spec V0
+# Source memory spec V0
 
 BalloonDB must remember where external data lives without importing everything.
 

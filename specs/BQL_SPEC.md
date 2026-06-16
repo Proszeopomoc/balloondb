@@ -1,4 +1,4 @@
-﻿# BQL spec V0
+# BQL spec V0
 
 BQL is the database query language for BalloonDB.
 

@@ -1,4 +1,4 @@
-﻿# Rust Core + PyO3 Bridge V00O
+# Rust Core + PyO3 Bridge V00O
 
 V00O introduces the first Rust/PyO3 experimental binary core for BalloonDB.
 

@@ -1,4 +1,4 @@
-﻿# BalloonDB Format Spec
+# BalloonDB Format Spec
 
 ## Runtime formats
 

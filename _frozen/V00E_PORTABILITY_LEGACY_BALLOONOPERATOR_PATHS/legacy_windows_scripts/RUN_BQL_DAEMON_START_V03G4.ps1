@@ -1,4 +1,4 @@
-﻿param(
+param(
   [string]$Root = "C:\BalloonOperator",
   [string]$MemoryRoot = "C:\BalloonOperator\memory\balloon_memory.balloondb",
   [int]$Port = 8765

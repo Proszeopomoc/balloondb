@@ -1,4 +1,4 @@
-﻿# BalloonDB Binary Format V00J
+# BalloonDB Binary Format V00J
 
 V00J introduces the first explicit binary database core for BalloonDB.
 

@@ -1,4 +1,4 @@
-﻿# Migration from .bpack
+# Migration from .bpack
 
 `.bpack`/JSONL files are transitional human-readable audit/migration sources.
 

@@ -1,4 +1,4 @@
-﻿# BalloonDB Notice
+# BalloonDB Notice
 
 Copyright (C) 2026 Michal Machura.
 

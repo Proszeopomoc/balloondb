@@ -1,4 +1,4 @@
-﻿# Large audit files kept local
+# Large audit files kept local
 
 The full refined inventory CSV is intentionally excluded from the Git repository because it is too large.
 

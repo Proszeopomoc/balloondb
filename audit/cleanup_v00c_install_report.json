@@ -1,4 +1,4 @@
-﻿{
+{
     "status":  "PASS_INSTALL_BALLOONDB_REPO_CLEANUP_V00C",
     "staging_root":  "C:\\BalloonDB_REPO_STAGING",
     "backup_root":  "C:\\BalloonDB_REPO_STAGING\\audit\\cleanup_v00c_backup_20260615_223919",

@@ -1,4 +1,4 @@
-﻿# BalloonDB API Spec
+# BalloonDB API Spec
 
 ## Core concepts
 

@@ -1,4 +1,4 @@
-﻿# G5 autonomy drift â€” frozen
+# G5 autonomy drift â€” frozen
 
 G5 autonomy/backlog/self-repair/overnight runners are frozen.
 

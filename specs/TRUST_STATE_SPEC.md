@@ -1,4 +1,4 @@
-﻿# BalloonDB Trust State Spec
+# BalloonDB Trust State Spec
 
 ## States
 

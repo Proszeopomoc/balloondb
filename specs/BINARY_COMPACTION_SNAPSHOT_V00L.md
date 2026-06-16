@@ -1,4 +1,4 @@
-﻿# BalloonDB Binary Compaction and Snapshot V00L
+# BalloonDB Binary Compaction and Snapshot V00L
 
 V00L adds snapshot compaction over V00J/V00K binary storage.
 

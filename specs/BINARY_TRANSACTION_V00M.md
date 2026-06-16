@@ -1,4 +1,4 @@
-﻿# BalloonDB Binary Transaction V00M1
+# BalloonDB Binary Transaction V00M1
 
 V00M1 fixes the transaction selftest and the product gate behavior after V00M.
 

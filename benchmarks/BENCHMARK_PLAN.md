@@ -1,4 +1,4 @@
-﻿# Benchmark plan
+# Benchmark plan
 
 No superiority claims without benchmarks.
 

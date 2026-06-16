@@ -94,3 +94,7 @@ Rust/PyO3 now implements the existing V00J .bseed/.bbridge/.bwal record/file lay
 ## V00O3A Strict Rust drop-in V00J byte contract
 
 Rust/PyO3 now has a strict byte-for-byte V00J compatibility gate. Rust does not serialize JSON; Python canonicalizes payload bytes and Rust performs V00J framing. BRS1 remains legacy/lab, not the main format.
+
+## V00P Rust backend shim
+
+V00P adds a Python shim that uses the Rust V00J backend when available and falls back to Python when Rust/PyO3 is unavailable. The shim preserves the strict V00J byte contract and reports a microbenchmark without making speed a pass/fail condition.

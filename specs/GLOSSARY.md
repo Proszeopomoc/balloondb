@@ -1,4 +1,4 @@
-﻿# Glossary
+# Glossary
 
 - Seed: stable entry point in memory.
 - Balloon: local expandable scope around one or more seeds.

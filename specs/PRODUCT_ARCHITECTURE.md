@@ -1,4 +1,4 @@
-﻿# BalloonDB Product Architecture
+# BalloonDB Product Architecture
 
 ## Layers
 

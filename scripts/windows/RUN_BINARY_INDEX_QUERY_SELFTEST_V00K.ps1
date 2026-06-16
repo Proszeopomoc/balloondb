@@ -1,4 +1,4 @@
-﻿param([string]$RepoRoot = "")
+param([string]$RepoRoot = "")
 
 if (-not $RepoRoot) {
   $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path

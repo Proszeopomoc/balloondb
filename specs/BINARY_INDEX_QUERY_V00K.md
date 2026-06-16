@@ -1,4 +1,4 @@
-﻿# BalloonDB Binary Index and Query V00K
+# BalloonDB Binary Index and Query V00K
 
 V00K adds the first binary index layer over V00J `.bseed` and `.bbridge` files.
 

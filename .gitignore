@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -62,3 +62,12 @@ Thumbs.db
 /audit/v00o3/**
 /rust/balloondb_core_rs/target/**
 /audit/v00o3a/**
+/audit/**
+/dist/**
+/build/**
+/.pytest_cache/**
+**/__pycache__/**
+**/*.pyc
+**/*.pyo
+**/*.whl
+rust/**/target/**

@@ -1,4 +1,4 @@
-﻿# Contributing
+# Contributing
 
 BalloonDB is licensed under AGPL-3.0-only.
 

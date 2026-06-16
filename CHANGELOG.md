@@ -85,3 +85,9 @@
 - Rust exposes v00j_record_id, v00j_encode_record, v00j_write_file, v00j_read_file.
 - Product gate runs strict Rust/Python byte-for-byte V00J compatibility test.
 - BRS1 remains legacy/lab and is not promoted as main storage format.
+
+## V00P Rust backend shim and benchmark
+
+- Added ust_backend_shim_v00p.py.
+- Added Rust-vs-Python V00J backend benchmark selftest.
+- Product gate now runs V00P runner and reports PASS_BALLOONDB_PRODUCT_GATE_V00P.

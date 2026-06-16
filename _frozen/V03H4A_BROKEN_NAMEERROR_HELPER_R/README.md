@@ -1,4 +1,4 @@
-﻿# V03H4A frozen
+# V03H4A frozen
 
 Reason:
 - active file contained broken Python statement:

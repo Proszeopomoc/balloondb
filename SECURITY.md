@@ -1,4 +1,4 @@
-﻿# Security Policy
+# Security Policy
 
 BalloonDB is currently experimental software.
 
