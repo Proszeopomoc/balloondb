@@ -98,3 +98,5 @@ Rust/PyO3 now has a strict byte-for-byte V00J compatibility gate. Rust does not 
 ## V00P Rust backend shim
 
 V00P adds a Python shim that uses the Rust V00J backend when available and falls back to Python when Rust/PyO3 is unavailable. The shim preserves the strict V00J byte contract and reports a microbenchmark without making speed a pass/fail condition.
+
+- V00Q: Rust batch backend benchmark for V00J framing; speed reported, byte equality required.

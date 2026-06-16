@@ -71,3 +71,5 @@ Thumbs.db
 **/*.pyo
 **/*.whl
 rust/**/target/**
+# V00Q generated outputs
+/audit/v00q/

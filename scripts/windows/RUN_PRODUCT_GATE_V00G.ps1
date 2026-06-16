@@ -19,7 +19,12 @@ $RequiredFiles = @(
   "scripts\windows\RUN_RUST_CORE_PYO3_SELFTEST_V00O.ps1",
   "scripts\windows\RUN_RUST_BACKEND_SHIM_BENCHMARK_V00P.ps1",
   "specs\V00J_WIRE_FORMAT.md",
-  "specs\RUST_BACKEND_SHIM_BENCHMARK_V00P.md"
+  "specs\RUST_BACKEND_SHIM_BENCHMARK_V00P.md",
+  "python_ref\balloondb_core\rust_batch_backend_v00q.py",
+  "python_ref\balloondb_core\selftest\run_rust_batch_backend_benchmark_v00q.py",
+  "scripts\windows\RUN_RUST_BATCH_BACKEND_BENCHMARK_V00Q.ps1",
+  "specs\RUST_BATCH_BACKEND_BENCHMARK_V00Q.md",
+  "rust\balloondb_core_rs\src\batch_v00q.rs"
 )
 
 $MissingRequired = @($RequiredFiles | Where-Object { -not (Test-Path (Join-Path $RepoRoot $_)) })
@@ -68,6 +73,7 @@ $RunnerNames = @(
   "RUN_BQL_COMPAT_TARGET_V03H4B.ps1",
   "RUN_CRASH_RECOVERY_SELFTEST_V03H3.ps1",
   "RUN_RUST_BACKEND_SHIM_BENCHMARK_V00P.ps1",
+  "RUN_RUST_BATCH_BACKEND_BENCHMARK_V00Q.ps1",
   "RUN_RUST_CORE_PYO3_SELFTEST_V00O.ps1",
   "RUN_STORAGE_SELFTEST_V03H1.ps1",
   "RUN_WAL_SELFTEST_V03H2.ps1"

@@ -4,6 +4,7 @@ use sha2::{Digest, Sha256};
 use std::convert::TryInto;
 
 mod v00j;
+mod batch_v00q;
 
 // Legacy/lab format from V00O. Kept for backward compatibility only.
 // It is NOT the default BalloonDB storage format.
@@ -136,5 +137,7 @@ fn balloondb_core_rs(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(v00j::v00j_encode_record, m)?)?;
     m.add_function(wrap_pyfunction!(v00j::v00j_write_file, m)?)?;
     m.add_function(wrap_pyfunction!(v00j::v00j_read_file, m)?)?;
+    m.add_function(wrap_pyfunction!(batch_v00q::v00j_batch_encode_records, m)?)?;
+    m.add_function(wrap_pyfunction!(batch_v00q::v00j_batch_count_payload_bytes, m)?)?;
     Ok(())
 }

@@ -1,3 +1,11 @@
+
+## V00Q - Rust batch backend benchmark
+
+- Added Rust/PyO3 batch V00J framing benchmark.
+- Measures batch sizes 1 / 100 / 1000 / 10000.
+- Reports Python framing, Rust batch framing, canonical JSON, and PyO3 crossing baseline.
+- Speed is reported but not used as pass/fail.
+
 ## v0.0.8-binary-compaction-snapshot
 
 - Added binary snapshot compaction from base files plus WAL.
@@ -88,6 +96,7 @@
 
 ## V00P Rust backend shim and benchmark
 
-- Added ust_backend_shim_v00p.py.
+- Added 
+ust_backend_shim_v00p.py.
 - Added Rust-vs-Python V00J backend benchmark selftest.
 - Product gate now runs V00P runner and reports PASS_BALLOONDB_PRODUCT_GATE_V00P.
